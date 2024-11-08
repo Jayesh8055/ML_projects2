@@ -1,0 +1,23 @@
+git pull origin main
+git add meit.pdf
+git commit -m"1nd commit"
+git push origin main
+
+
+docker –v
+docker image 
+docker ps 
+docker pull openjdk
+docker image 
+docker images
+docker run –-name CODE –it –d openjdk
+docker ps
+int a=10
+int b=20
+system.out.println(a+b)
+docker ps
+docker stop __id__
+docker container rm  __id__
+docker ps 
+
+

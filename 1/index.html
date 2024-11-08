@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admin Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Custom smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Optional styling */
+        .content-section {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sidebar -->
+        <nav class="col-md-3 col-lg-2 bg-dark sidebar">
+            <h2 class="text-center text-white py-3">College Admin</h2>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#mainContent">Dashboard</a> <!-- Smooth scroll link -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#studentsSection">Students</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#feesSection">Fees</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#coursesSection">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#settingsSection">Settings</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main id="mainContent" class="col-md-9 col-lg-10 main-content">
+            <header class="pt-3">
+                <h1>College Fee Details</h1>
+            </header>
+
+            <!-- Statistics Cards -->
+            <section class="row my-4">
+                <!-- Total Students Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            Total Students
+                        </div>
+                        <div class="card-body">
+                            <h2 class="text-success">2,300</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paid Fees Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            Paid Fees
+                        </div>
+                        <div class="card-body">
+                            <h2 class="text-success">1,800</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pending Fees Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            Pending Fees
+                        </div>
+                        <div class="card-body">
+                            <h2 class="text-danger">500</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Students Section -->
+            <section id="studentsSection" class="content-section">
+                <h3>Student Information</h3>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>#</th>
+                                <th>Student Name</th> 
+                                <th>Roll Number</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Jayesh Mahajan</td>
+                                <td>1001</td>
+                                <td>Enrolled</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Akshat More</td>
+                                <td>1002</td>
+                                <td>Enrolled</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Manasi Rathode</td>
+                                <td>1003</td>
+                                <td>Enrolled</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Fees Section -->
+            <section id="feesSection" class="content-section">
+                <h3>Recent Fee Payments</h3>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>#</th>
+                                <th>Student Name</th> 
+                                <th>Roll Number</th>
+                                <th>Fee Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Jayesh Mahajan</td>
+                                <td>1001</td>
+                                <td>Paid</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Akshat More</td>
+                                <td>1002</td>
+                                <td>Pending</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Manasi Rathode</td>
+                                <td>1003</td>
+                                <td>Paid</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Courses Section -->
+            <section id="coursesSection" class="content-section">
+                <h3>Available Courses</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">Computer Science</li>
+                    <li class="list-group-item">Information Technology</li>
+                    <li class="list-group-item">Artificial Intelligence</li>
+                    <li class="list-group-item">Data Science</li>
+                </ul>
+            </section>
+
+            <!-- Settings Section -->
+            <section id="settingsSection" class="content-section">
+                <h3>Settings</h3>
+                <p>Settings content can go here...</p>
+            </section>
+        </main>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

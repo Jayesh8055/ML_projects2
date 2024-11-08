@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.btn {
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    border: 5px solid black;
+    margin: 20px;
+    display: inline-block;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.flash {
+    opacity: 0.5;
+}

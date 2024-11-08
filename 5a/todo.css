@@ -1,0 +1,60 @@
+/* todo.css */
+
+#todoPage {
+    background-color: #f0f8ff; 
+}
+
+
+.ui-header h1 {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Input field styling */
+#taskInput {
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* Button styling */
+#addTaskButton, .deleteButton {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#addTaskButton:hover, .deleteButton:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Task list styling */
+#taskList li {
+    font-size: 18px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Style for delete buttons */
+.deleteButton {
+    margin-left: 900px;
+    background-color: #ff4d4d;  /* red background color */
+    color: white;               /* white text color */
+    border: none;               /* no border */
+    border-radius: 5px;         /* rounded corners */
+    padding: 5px 10px;          /* spacing inside button */
+    cursor: pointer;            /* pointer cursor on hover */
+    font-size: 14px;            /* font size */
+}
+
+.deleteButton:hover {
+    background-color: #ff1a1a;  /* darker red on hover */
+}
